@@ -4,6 +4,6 @@ section .text
 
   _start:
 
-    
+    ; syscall exit de linux 64bits
     mov rax, 0x3c
     syscall
