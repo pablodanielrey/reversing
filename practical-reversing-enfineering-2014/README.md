@@ -10,3 +10,10 @@ capstone -- http://www.capstone-engine.org/
 
 apt-get install yasm
 apt-get install python3-capstone
+
+
+---
+
+Syscalls de linux
+
+https://filippo.io/linux-syscall-table/
