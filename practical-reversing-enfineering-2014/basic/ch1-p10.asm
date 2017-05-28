@@ -1,4 +1,3 @@
-BITS 32
 
 section .text
   global _start
@@ -8,3 +7,7 @@ section .text
     mov ebx, edi
     repne scasd
     sub edi, ebx
+
+    ; exit
+    mov rax, 0x3c
+    syscall
