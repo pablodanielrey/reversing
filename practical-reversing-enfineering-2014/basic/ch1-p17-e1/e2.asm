@@ -13,7 +13,7 @@ section .text
     ret                     ; obtiene el valor del stack y lo asigna a rip (hace un call a sec2)
 
   _sec2:
-    sub rsp, 8              ; aca se corta el programa!!!! deberían ser 8 bytes ya que es un qword!!
+    sub rsp, 0xf            ; OJO que aunque sean 8 bytes a usar del stack, este DEBE ESTAR ALINEADO a 16 bytes!!! requerimientos de x86_64
     mov rax, _exit
     mov [rsp], rax
     ret                     ; obtiene el valor del stack y lo asigna a rip (hace un call a exit)
